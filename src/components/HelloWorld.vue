@@ -76,7 +76,7 @@
         <b>Sylvain Janot</b><br>
         <i>Dev Junior</i>
       </p>
-      <div id="projetsCards">
+      <div id="projectsCards">
         <div class="projetCard">
           <img src="../assets/ecole1.png" alt="">
           <h3>Ecole Roger Bazille</h3>
@@ -108,7 +108,7 @@
           <li><a :href="`${publicPath}cv_sylvain_janot_dev_web.pdf`" target="_blank">Voir mon CV</a></li>
         </div>
       </ul>
-      <p>Site fictif inspiré d'OpenFly.fr - En aucun cas destiné à être malveillant</p>
+      <p>Site fictif et éphémère inspiré par (et pour) OpenFly.fr - En aucun cas destiné à être malveillant</p>
     </footer>
   </div>
 </template>
@@ -238,9 +238,9 @@ export default {
 #container4{
   font-size: 200%; 
   background-color: white;
-  padding: 8%;
+  padding: 5%;
 }
-#projetsCards{
+#projectsCards{
   flex-basis: 30%;
   display: flex;
   padding:5%
@@ -249,7 +249,7 @@ export default {
   /* padding-top: 5%;
   box-shadow: 1px solid black;
   border: 1px solid black; */
-      -webkit-box-orient: vertical;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -312,5 +312,29 @@ li{
 .navbar.navbar--hidden{
   box-shadow: none;
   transform: translate3d(0, -100%, 0);
+}
+
+/* Responsive */ 
+@media (max-width: 991px){
+
+#container1,#container2,#container3,#container4,#cards,#projectsCards{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#mepLogos{
+  margin-top: 6%;
+}
+#mepLogos img{
+  width: 30%;
+  height: 30%;
+}
+#container2 h2,#projectsCards{
+  font-size: 80%;
+}
+.projetCard{
+  width: 90%;
+}
+
 }
 </style>
