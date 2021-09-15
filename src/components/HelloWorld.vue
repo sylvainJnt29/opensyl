@@ -13,7 +13,7 @@
       <div id="leftContainer1">
         <h2>OpenSyl</h2>
         <p>Le junior sur mesure responsable et accessible</p>
-        <p>Bienvenue à bord !</p>
+        <p><b>Bienvenue à bord !</b></p>
       </div>
       <div id="rightContainer1">
         <h2>Envie de me recruter ?</h2>
@@ -62,9 +62,10 @@
       <h2>Comment ça marche ?</h2>
       <p>Découvrez comment me rencontrer !</p>
       <ul>
-        <li>1 Contactez moi</li>
-        <li>2 Echangeons</li>
-        <li>3 Embarquons ensemble</li>
+        <li>Visitez ce magnifique site</li>
+        <li>Contactez moi</li>
+        <li>Echangeons</li>
+        <li>Embarquons ensemble</li>
       </ul>
     </div>    
     <div id="container4">
