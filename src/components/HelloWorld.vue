@@ -115,6 +115,9 @@
 </template>
 
 <script>
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin.js';
 export default {
   name: 'HelloWorld',
   data () {
@@ -147,10 +150,45 @@ export default {
       //On set la position actuelle comme étant la dernière
       this.lastScrollPosition = currentScrollPosition
     },
-  props: {
-    msg: String
+    startAnimations(){
+      gsap.to("#leftContainer1", {
+        scrollTrigger: "#leftContainer1",
+        duration:1,
+        delay:1,
+        x:1800
+      });
+      gsap.to("#rightContainer1", {
+        scrollTrigger: "#rightContainer1",
+        duration:1.5,
+        delay:2,
+        x:-1500,
+      });
+      gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+      var tl1 = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#mepLogos",
+        toggleActions: "play reset play reverse",
+      }
+      });
+      tl1.from("#mepLogos", {x:-1800,duration:3.5,ease:"power2"})
+      .to("#mepLogos", {x:0});
+
+      gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+      var tl2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#projectsCards",
+        toggleActions: "play reset play reverse",
+      }
+      });
+      tl2.from("#projectsCards", {x:1800,duration:3.5,ease:"power2"})
+      .to("#projectsCards", {x:0});
+
+
+  // props: {
+  //   msg: String
+  // }
+    }
   }
-}
 }
 </script>
 
@@ -179,12 +217,16 @@ export default {
 }
 #leftContainer1{
   margin: 2%;
+  position: relative;
+  left: -1800px;
 }
 #rightContainer1{
   margin: 4%;
   padding: 1%;
   background-color: white;
   border-radius:  30px;
+  position: relative;
+  left: 1500px;
 }
 #rightContainer1 h2{
   color: rgb(36, 189, 125);
