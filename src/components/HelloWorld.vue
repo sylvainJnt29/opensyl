@@ -58,16 +58,17 @@
         </div>
     </div>    
     <div id="container3">
-      <!-- votre tempes est précieux + quelques avions -->
+      <!-- votre temps est précieux + quelques avions -->
       <h2>Comment ça marche ?</h2>
       <p>Découvrez comment me rencontrer !</p>
       <ul>
-        <li>Visitez ce magnifique site</li>
-        <li>Contactez moi</li>
-        <li>Echangeons</li>
-        <li>Embarquons ensemble</li>
+        <li><v-scrollin :speed="70" :misses="10">1 Visitez ce magnifique site</v-scrollin></li>
+        <li><v-scrollin :speed="70" :misses="10">2 Contactez moi</v-scrollin></li>
+        <li><v-scrollin :speed="70" :misses="10">3 Echangeons</v-scrollin>  </li>
+        <li><v-scrollin :speed="70" :misses="10">4 Embarquons ensemble</v-scrollin></li>
       </ul>
-    </div>    
+    </div> 
+
     <div id="container4">
       <!-- témoignage = lm + actualité = projets -->
       <h2>"Témoignage"</h2>
@@ -118,8 +119,13 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin.js';
+// import { component } from 'vue/types/umd';
+import VScrollin from "vue-scrollin";
 export default {
   name: 'HelloWorld',
+    components:{
+      "v-scrollin": VScrollin,
+    },
   data () {
     return {
       showNavbar: true,
@@ -181,7 +187,16 @@ export default {
       }
       });
       tl2.from("#projectsCards", {x:1800,duration:3.5,ease:"power2"})
-      .to("#projectsCards", {x:0});
+      .to("#projectsCards", {x:0});gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+      var tl3 = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#container3",
+        toggleActions: "play reset play reverse",
+      }
+      });
+      tl3.from("#container3", {x:0,duration:3.5,ease:"power2"})
+      .to("#container3", {x:0});
 
 
   // props: {
@@ -278,6 +293,10 @@ export default {
   text-align: center;
   color:white;
 }
+/* #container3 ul{
+background-color: black;
+margin: 0% 15% 0% 15%;
+} */
 #container4{
   font-size: 200%; 
   background-color: white;
@@ -292,19 +311,19 @@ export default {
   /* padding-top: 5%;
   box-shadow: 1px solid black;
   border: 1px solid black; */
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-preferred-size: 30%;
-    flex-basis: 30%;
-    background-color: #fff;
-    border-radius: 10px;
-    -webkit-box-shadow: 0 2px 4px -1px rgba(0,0,0,.05),0 4px 5px 0 rgba(0,0,0,.05),0 1px 10px 0 rgba(0,0,0,.12);
-    box-shadow: 0 2px 4px -1px rgba(0,0,0,.05),0 4px 5px 0 rgba(0,0,0,.05),0 1px 10px 0 rgba(0,0,0,.12);
-    color: #273b64;
-    width: 100%;
-    padding: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-preferred-size: 30%;
+  flex-basis: 30%;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 4px -1px rgba(0,0,0,.05),0 4px 5px 0 rgba(0,0,0,.05),0 1px 10px 0 rgba(0,0,0,.12);
+  box-shadow: 0 2px 4px -1px rgba(0,0,0,.05),0 4px 5px 0 rgba(0,0,0,.05),0 1px 10px 0 rgba(0,0,0,.12);
+  color: #273b64;
+  width: 100%;
+  padding: 15px;
 }
 .projetCard img{
   width: 150px;

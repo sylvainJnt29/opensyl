@@ -11,7 +11,8 @@
     "@guillaumebriday/vue-scroll-progress-bar": "^1.0.0",
     "core-js": "^3.6.5",
     "gsap": "^3.7.1",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-scrollin": "^0.1.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
