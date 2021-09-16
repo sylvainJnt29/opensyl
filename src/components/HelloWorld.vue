@@ -71,9 +71,9 @@
 
     <div id="container4">
       <!-- témoignage = lm + actualité = projets -->
-      <h2>"Témoignage"</h2>
+      <h2>Témoignage</h2>
       <p> " Embarquer avec vous dans cette aventure sera une joie immense pour moi! J'ai hâte de monter en compétences
-        en travaillant avec des professionnels et pouvoir m'investir à fond et prouver ce que je vaut à l'entreprise qui 
+        en travaillant avec des professionnels et pouvoir m'investir à fond et prouver ce que je vaux à l'entreprise qui 
         voudra bien m'aider à faire ce premier saut dans le monde profesionnel. "<br><br>
         <b>Sylvain Janot</b><br>
         <i>Dev Junior</i>
