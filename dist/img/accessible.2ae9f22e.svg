@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="113px" height="77px" viewBox="0 0 113 77" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>accessible</title>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-1316.000000, -918.000000)" fill-rule="nonzero">
+            <g id="Group-35" transform="translate(1261.000000, 919.000000)">
+                <g id="accessible" transform="translate(56.000000, 0.000000)">
+                    <circle id="Oval" stroke="#273B64" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" cx="21.75" cy="35.5" r="14.5"></circle>
+                    <path d="M0.25,67 C2.50952935,60.0510762 7.89341171,54.5783691 14.780146,52.2301316 C21.6668802,49.8818941 29.2516138,50.9325649 35.25,55.065706" id="Path" stroke="#273B64" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <circle id="Oval" stroke="#273B64" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" cx="89.75" cy="35.5" r="14.5"></circle>
+                    <path d="M74.25,55.352815 C80.28074,50.3296384 88.2880467,48.7191186 95.6733114,51.0439171 C103.058576,53.3687155 108.880614,59.3325578 111.25,67" id="Path" stroke="#273B64" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <circle id="Oval" stroke="#273B64" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" cx="54.75" cy="11.5" r="11.5"></circle>
+                    <path d="M41.25,29 C44.8973882,25.1621154 50.1590579,22.9750782 55.6778607,23.0029935 C61.2531723,22.9074516 66.5882919,25.1030624 70.25,29" id="Path" stroke="#273B64" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M70.25,48.3742243 C70.25,59.5809069 55.75,76 55.75,76 C55.75,76 41.25,59.4606205 41.25,48.3742243 C41.25,40.4355594 47.7418711,34 55.75,34 C63.7581289,34 70.25,40.4355594 70.25,48.3742243 Z" id="Path" fill="#009F7F"></path>
+                    <circle id="Oval" fill="#FFFFFF" cx="55.25" cy="48" r="7"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
